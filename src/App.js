@@ -48,6 +48,9 @@ import KakaoRedirectPage from './pages/member/KakaoRedirectPage';
 import KakaoModifyPage from './pages/member/KakaoModifyPage';
 import GoogleRedirectPage from './pages/member/GoogleRedirectPage';
 import MemberEmailPage from './pages/member/MemberEmailPage';
+import Search from './pages/products/Search';
+
+import AdminPage from './pages/admin/AdminPage';
 
 function App() {
   
@@ -55,6 +58,7 @@ function App() {
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<MainPage />}/>
+        <Route path="/search" element={<Search />} />
         <Route path='/mypage'>  
           <Route index element={<MyPage /> } />
           <Route path="/mypage" element={<MyPageComponent />} />
@@ -106,6 +110,7 @@ function App() {
         <Route path="/myshop/">
           <Route path="cart" element={<CartPage/>}/>
         </Route>
+        <Route path='/admin' element={<AdminPage />} />
       </Route>
     </Routes>
   );
