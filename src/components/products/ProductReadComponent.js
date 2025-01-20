@@ -570,9 +570,11 @@ const RecommendedBox = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   img {
-    height: max-content;
-    aspect-ratio: 197/165;
-    object-fit: cover;
+      width: 100%;
+    height: 100%;
+    max-width: 197px; 
+    max-height: 165px; 
+    object-fit: cover; 
     border-radius: 20px;
     border: 1px solid black;
   }
