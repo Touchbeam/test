@@ -1,2 +1,9 @@
-/api/* http://192.168.0.87:8010/api/:splat 200
-/* /index.html 200
+from = "/api/*"
+to = "http://192.168.0.87:8010/api/:splat"
+status = 200
+force = true
+
+from = "/*"
+to = "/index.html"
+status = 200
+force = true
