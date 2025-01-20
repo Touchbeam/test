@@ -146,9 +146,9 @@ if (likedProducts[productId]) { // 좋아요 상태라면, 좋아요 해제 + re
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <Row >
+        <Row className="justify-content-center">
         {serverData.dtoList.filter(product => !productSize || parseInt(product.productSize) <= productSize || parseInt(product.productSize) >= productSize).map((product,index) => (
-         <Col className='ms-5' md={3} key={index} >
+        <Col className="mb-5 px-3" md={4} key={index}> 
                                <Card className='mb-5 '>
                                  <div className='image-wrapper mx-auto my-3' onClick={() => moveToRead(product.productId)}>
                                    <Card.Img variant="top " style={{ width: '100%' , height:'100%'}} 
