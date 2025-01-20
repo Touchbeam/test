@@ -175,7 +175,7 @@ const Brand = () => {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-    <Row className="justify-content-center">
+    <Row className="justify-content-start">
         {serverData.dtoList.filter(product => product.category != null).map((product,index) => (
         <Col className="mb-5 px-3" md={4} key={index}> {/* 한 열에 3개 카드, 카드 간 간격 추가 */}
             <Card className='mb-5 '>
