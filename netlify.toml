@@ -1,7 +1,7 @@
 
 [[redirects]]
 from = "/api/*"
-to = "http://192.168.0.29:8010/:splat"
+to = "https://5a9d-1-220-61-154.ngrok-free.app/:splat"
 status = 200
 force = true
 
