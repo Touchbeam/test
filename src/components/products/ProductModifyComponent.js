@@ -111,7 +111,7 @@ const ProductModifyComponent = ({productId}) => {
     <>
             {fetching ? <FetchingModal /> : <></>}
             {result ?  <ResultModal title={`${result}`} content={"정상적으로 처리되었습니다."} callbackFn={closeModal}/> : <></>}
-<Image className='mx-auto my-5 ' src={`${host}/products/view/${product.uploadFileNames[0]}`}  fluid/>
+<Image className='mx-auto my-5 ' src={`${host}/api/products/view/${product.uploadFileNames[0]}`}  fluid/>
 
     <Form.Group className="mb-3" controlId="pnoForm.ControlInput1">
             <Form.Label>productId</Form.Label>
@@ -148,7 +148,7 @@ const ProductModifyComponent = ({productId}) => {
         <hr />
         <Row>
             {product.uploadFileNames.map((ImgFile, i ) => (
-                    <Col md={4}>  <Image className='mx-auto my-5 ' src={`${host}/products/view/${ImgFile}`}  fluid/>        
+                    <Col md={4}>  <Image className='mx-auto my-5 ' src={`${host}/api/products/view/${ImgFile}`}  fluid/>        
                     <Button variant="danger" onClick={()=> deleteOldImage(ImgFile)} disabled={product.uploadFileNames.length === 1}>삭제</Button> </Col>
   )  )}
         </Row>

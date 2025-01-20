@@ -11,7 +11,7 @@ const MemberEmailPage = () => {
   useEffect(() => {
     const fetchEmails = async () => {
       try {
-        const response = await axios.get(`${API_SERVER_HOST}/member/emaillist`);
+        const response = await axios.get(`${API_SERVER_HOST}/api/member/emaillist`);
         setEmails(response.data); 
       } catch (err) {
         console.error('Error fetching email list:', err);

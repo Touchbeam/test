@@ -3,7 +3,7 @@ import jwtAxios from "../util/jwtUtil";
 // export const API_SERVER_HOST = 'http://localhost:8010'
 import { API_SERVER_HOST } from '../serverEnv'
 
-const prefix = `${API_SERVER_HOST}/product/review/`
+const prefix = `${API_SERVER_HOST}/api/product/review/`
 
 // localhost:8010/api/product/review/?productId=22
 export const getReviewByProductId = async(productId) => {

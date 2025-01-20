@@ -101,7 +101,7 @@ const CartPage = ({ member }) => {
             </div>
             <div className="col-2">
               <img
-                src={`${host}/product/view/${cart.imageName?.[0] || "default-image.jpg"}`}
+                src={`${host}/api/product/view/${cart.imageName?.[0] || "default-image.jpg"}`}
                 alt={cart.imageName?.[0]}
                 className="img-fluid rounded"
               />

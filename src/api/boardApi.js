@@ -6,7 +6,7 @@ import jwtAxios from "../util/jwtUtil";
 import { API_SERVER_HOST } from '../serverEnv'
 
 // export const API_SERVER_HOST = "http://localhost:8010"
-const board_path = `${API_SERVER_HOST}/board`
+const board_path = `${API_SERVER_HOST}/api/board`
 
 // 카테고리별 게시판 조회 (notice, faq)
 export const getCategoryList = async({ category, pageParam }) => {

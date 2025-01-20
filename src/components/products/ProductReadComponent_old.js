@@ -78,7 +78,7 @@ const [member, setMember] = useState(() => {
     {fetching ? <FetchingModal /> : <> </>}
     <Container>
         <Row>
-        <Col md={5}>   <Image src={`${host}/product/view/${product.uploadFileNames[0]}`} fluid/> </Col>
+        <Col md={5}>   <Image src={`${host}/api/product/view/${product.uploadFileNames[0]}`} fluid/> </Col>
             <Col md={7} className='ms-auto p-3'>  
             <p>상품번호 : {product.productId} </p> 
             <p>상품명 : {product.productName} </p> 

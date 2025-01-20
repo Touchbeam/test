@@ -3,7 +3,7 @@ import jwtAxios from "../util/jwtUtil";
 // import { API_SERVER_HOST } from './qnaApi'
 import { API_SERVER_HOST } from '../serverEnv'
 
-const prefix = `${API_SERVER_HOST}/order`
+const prefix = `${API_SERVER_HOST}/api/order`
 
 export const createOrder = async(orderData) => {
     console.log("전송할 주문 데이터", orderData)

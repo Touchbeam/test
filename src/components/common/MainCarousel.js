@@ -123,7 +123,7 @@ const MainCarousel = ({ images, setTextMargin }) => {
               {/*
               <img src={data.image}  style={{ width: 'auto', height: '95%' }}  alt={`hexaceps_image_${index}`} />
               */}
-            <img src={`${host}/product/view/${data.image}`}  style={{ width: 'auto', height: '95%' }}  alt={`hexaceps_image_${index}`} 
+            <img src={`${host}/api/product/view/${data.image}`}  style={{ width: 'auto', height: '95%' }}  alt={`hexaceps_image_${index}`} 
             />
             </div>  
             )}
