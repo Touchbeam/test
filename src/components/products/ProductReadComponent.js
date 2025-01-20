@@ -352,8 +352,8 @@ const [member, setMember] = useState(() => {
             <Image src={`${host}/api/product/view/product_${random.random4}_1.jpg`} onClick={() => navigate(`/products/read/${random.random4}`)}  style={{ cursor: 'pointer' }} fluid/>
           </RecommendedBox>
   
-          <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px'}} >
-                       <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer' , maxHeight:'100px'}} />
+          <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px', maxHeight:'100px'}} >
+                       <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer'}} />
           </div>
         </Col>
       </Row>
