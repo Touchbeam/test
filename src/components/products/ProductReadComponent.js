@@ -345,12 +345,12 @@ const [member, setMember] = useState(() => {
           </div>
 
           <Title>Recommended Shoes</Title>
-          <SubImgBox>
+          <RecommendedBox>
             <Image src={`${host}/api/product/view/product_${random.random1}_1.jpg`} onClick={() => navigate(`/products/read/${random.random1}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random2}_1.jpg`} onClick={() => navigate(`/products/read/${random.random2}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random3}_1.jpg`} onClick={() => navigate(`/products/read/${random.random3}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random4}_1.jpg`} onClick={() => navigate(`/products/read/${random.random4}`)}  style={{ cursor: 'pointer' }} fluid/>
-          </SubImgBox>
+          </RecommendedBox>
   
           <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px', maxHeight:'100px'}} >
                        <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer'}} />
@@ -566,7 +566,6 @@ const RecommendedBox = styled.div`
   width: 100%;
   height: max-content;
   display: grid;
-  max-width: 187px;
   max-height: 165px;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
