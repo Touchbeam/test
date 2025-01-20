@@ -181,7 +181,7 @@ const Brand = () => {
             <Card className='mb-5 '>
               <div className='image-wrapper mx-auto my-3' onClick={() => moveToRead(product.productId)}>
                 <Card.Img variant="top " style={{ width: '100%' , height:'100%'}} 
-                          src={`${host}/api/product/view/${product.uploadFileNames[0]}`}  onError={(e) => e.target.src = defaultImage} />
+                          src={`${host}/product/view/${product.uploadFileNames[0]}`}  onError={(e) => e.target.src = defaultImage} />
                 <div className="caption">상품바로가기</div>
               </div>
               <Card.Body className='ms-3'>
