@@ -3,7 +3,7 @@
     testhost : "http://192.168.0.2:8010"
 */
 
-export const API_SERVER_HOST = process.env.REACT_APP_API_SERVER_HOST || "http://192.168.0.87:8010"; 
+export const API_SERVER_HOST = process.env.REACT_APP_API_SERVER_HOST || "/api"; 
 
 export const REDIRECT_HOST = process.env.REACT_APP_REDIRECT_HOST || "https://fastidious-toffee-be993e.netlify.app";
 
