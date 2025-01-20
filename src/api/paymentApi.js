@@ -3,7 +3,7 @@ import jwtAxios from "../util/jwtUtil";
 //import { API_SERVER_HOST } from './qnaApi'
 import { API_SERVER_HOST } from '../serverEnv'
 
-const prefix = `${API_SERVER_HOST}/api/order/payment`
+const prefix = `${API_SERVER_HOST}/order/payment`
 
 export const requestPayment = async(payData) => {
     console.log("결제 데이터 확인 requestPayment : ", payData)

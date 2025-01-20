@@ -12,7 +12,7 @@ const refreshJWT = async () => {
     const header = { headers: { "Authorization": `Bearer ${accessToken}` } };
 
     try {
-        const res = await axios.get(`${host}/api/member/refresh?refreshToken=${refreshToken}`, header);
+        const res = await axios.get(`${host}/member/refresh?refreshToken=${refreshToken}`, header);
         console.log("Refresh JWT Response:", res.data);
         return res.data;
     } catch (error) {

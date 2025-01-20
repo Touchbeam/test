@@ -187,7 +187,7 @@ const [member, setMember] = useState(() => {
       <Row style={{ minHeight: '865px' }}>
         <Col md={5}>
           <ImgBox> 
-            <Image /*src={product.uploadFileNames[0]}*/    src={`${host}/api/product/view/${product.uploadFileNames[currentMainImage]}`}   fluid/> 
+            <Image /*src={product.uploadFileNames[0]}*/    src={`${host}/product/view/${product.uploadFileNames[currentMainImage]}`}   fluid/> 
           </ImgBox>
 
           <InfoBox>
@@ -261,16 +261,16 @@ const [member, setMember] = useState(() => {
             <Line/>
             <SubImgContainer>
             <SubImgBox>
-                <Image src={`${host}/api/product/view/${product.uploadFileNames[0]}` } onClick={() => handleMainImageClick(0)}  fluid/>
+                <Image src={`${host}/product/view/${product.uploadFileNames[0]}` } onClick={() => handleMainImageClick(0)}  fluid/>
               </SubImgBox>
               <SubImgBox>
-                <Image src={`${host}/api/product/view/${product.uploadFileNames[1]}`} onClick={() => handleMainImageClick(1)}  fluid/>
+                <Image src={`${host}/product/view/${product.uploadFileNames[1]}`} onClick={() => handleMainImageClick(1)}  fluid/>
               </SubImgBox>
               <SubImgBox>
-                <Image src={`${host}/api/product/view/${product.uploadFileNames[2]}`} onClick={() => handleMainImageClick(2)}  fluid/>
+                <Image src={`${host}/product/view/${product.uploadFileNames[2]}`} onClick={() => handleMainImageClick(2)}  fluid/>
               </SubImgBox>
               <SubImgBox>
-                <Image src={`${host}/api/product/view/${product.uploadFileNames[3]}`} onClick={() => handleMainImageClick(3)}  fluid/>
+                <Image src={`${host}/product/view/${product.uploadFileNames[3]}`} onClick={() => handleMainImageClick(3)}  fluid/>
               </SubImgBox>
             </SubImgContainer>
           <SubImgContainer>
@@ -281,11 +281,11 @@ const [member, setMember] = useState(() => {
                     product.productSiteDetails.map((siteDetail, index) => {
                       let siteImage = null;
                       if (siteDetail?.siteLink?.includes("kream")) {
-                        siteImage = <Image src={`${host}/api/product/view/kreamicon.PNG`}  alt="Kream" style={{ width: '60%' ,cursor: 'pointer' }}  />;;
+                        siteImage = <Image src={`${host}/product/view/kreamicon.PNG`}  alt="Kream" style={{ width: '60%' ,cursor: 'pointer' }}  />;;
                       } else if (siteDetail?.siteLink?.includes("stockx")) {
-                        siteImage = <Image src={`${host}/api/product/view/stockxicon.PNG`}  alt="stockx" style={{ width: '60%' ,cursor: 'pointer' }}  />;;
+                        siteImage = <Image src={`${host}/product/view/stockxicon.PNG`}  alt="stockx" style={{ width: '60%' ,cursor: 'pointer' }}  />;;
                       } else if (siteDetail?.siteLink?.includes("soldout")) {
-                        siteImage = <Image src={`${host}/api/product/view/soldouticon.PNG`}  alt="soldout" style={{ width: '65%' ,cursor: 'pointer' }}  />;;
+                        siteImage = <Image src={`${host}/product/view/soldouticon.PNG`}  alt="soldout" style={{ width: '65%' ,cursor: 'pointer' }}  />;;
                       }
                       return (
                         <td key={index}  style={{ width: '33%', padding: '0' }} className='pb-1'>
@@ -346,10 +346,10 @@ const [member, setMember] = useState(() => {
 
           <Title>Recommended Shoes</Title>
           <RecommendedBox>
-            <Image src={`${host}/api/product/view/product_${random.random1}_1.jpg`} onClick={() => navigate(`/products/read/${random.random1}`)}  style={{ cursor: 'pointer' }} fluid/>
-            <Image src={`${host}/api/product/view/product_${random.random2}_1.jpg`} onClick={() => navigate(`/products/read/${random.random2}`)}  style={{ cursor: 'pointer' }} fluid/>
-            <Image src={`${host}/api/product/view/product_${random.random3}_1.jpg`} onClick={() => navigate(`/products/read/${random.random3}`)}  style={{ cursor: 'pointer' }} fluid/>
-            <Image src={`${host}/api/product/view/product_${random.random4}_1.jpg`} onClick={() => navigate(`/products/read/${random.random4}`)}  style={{ cursor: 'pointer' }} fluid/>
+            <Image src={`${host}/product/view/product_${random.random1}_1.jpg`} onClick={() => navigate(`/products/read/${random.random1}`)}  style={{ cursor: 'pointer' }} fluid/>
+            <Image src={`${host}/product/view/product_${random.random2}_1.jpg`} onClick={() => navigate(`/products/read/${random.random2}`)}  style={{ cursor: 'pointer' }} fluid/>
+            <Image src={`${host}/product/view/product_${random.random3}_1.jpg`} onClick={() => navigate(`/products/read/${random.random3}`)}  style={{ cursor: 'pointer' }} fluid/>
+            <Image src={`${host}/product/view/product_${random.random4}_1.jpg`} onClick={() => navigate(`/products/read/${random.random4}`)}  style={{ cursor: 'pointer' }} fluid/>
           </RecommendedBox>
   
           <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px'}} >

@@ -4,7 +4,7 @@ import { API_SERVER_HOST, REDIRECT_HOST, REST_API_KEY } from '../serverEnv'
 
 //리다이렉트uri
 // const redirect_uri = `http://localhost:3010/member/kakao`
-const redirect_uri = `${REDIRECT_HOST}/api/member/kakao`
+const redirect_uri = `${REDIRECT_HOST}/member/kakao`
 
 //인가 코드 받기
 const auth_code_path = `https://kauth.kakao.com/oauth/authorize`
@@ -42,7 +42,7 @@ export const getAccessToken = async (authCode) => {
 //SocialController.jave => /api/member/kakao
 export const getMemberWithAccessToken = async (accessToken) => {
     // Access token을 Authorization 헤더로 보내기
-    const res = await axios.get(`${API_SERVER_HOST}/api/member/kakao`, {
+    const res = await axios.get(`${API_SERVER_HOST}/member/kakao`, {
         headers: {
             Authorization: `Bearer ${accessToken}`  // Bearer 형식으로 헤더에 전달
         }

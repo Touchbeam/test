@@ -119,7 +119,7 @@ const DeliveryPage = () => {
             style={{ border: "1px solid #ddd", borderRadius: "10px", padding: "15px" }} >
             <Row className="g-3 align-items-center">
               <Col lg={2}>
-                <img src={`${API_SERVER_HOST}/api/product/view/${ item.productImage || "default-image.jpg" }`}
+                <img src={`${API_SERVER_HOST}/product/view/${ item.productImage || "default-image.jpg" }`}
                   alt={item.productName} className="img-fluid rounded" style={{ maxWidth: "100px" }} />
               </Col>
               {/* 상품 상세 정보 */}

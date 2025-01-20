@@ -2,7 +2,7 @@ import axios from 'axios'
 import jwtAxios from "../util/jwtUtil";
 import { API_SERVER_HOST } from '../serverEnv'
 // export const API_SERVER_HOST = `http://localhost:3010`
-const prefix = `${API_SERVER_HOST}/api/qna`
+const prefix = `${API_SERVER_HOST}/qna`
 
 //특정번호의 qna조회npm install cross-env # port 
 //http://localhost:8080/api/qna/1

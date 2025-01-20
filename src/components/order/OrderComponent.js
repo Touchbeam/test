@@ -255,7 +255,7 @@ const OrderComponent = ({ cartId }) => {
                 <h5>About Product</h5>
                 <Row>
                     <Col>
-                        <Image src={`${host}/api/product/view/${product.uploadFileNames[0]}`} fluid/>
+                        <Image src={`${host}/product/view/${product.uploadFileNames[0]}`} fluid/>
                     </Col>
                     <Col>
                       <Row>

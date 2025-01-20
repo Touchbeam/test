@@ -23,7 +23,7 @@ const GoogleRedirectPage = () => {
     const data = { accessToken };
 
     try {
-      const res = await axios.post(`${API_SERVER_HOST}/api/member/google`, data);
+      const res = await axios.post(`${API_SERVER_HOST}/member/google`, data);
       console.log(res);
 
       const memberInfo = res.data;
