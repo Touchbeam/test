@@ -42,7 +42,7 @@ export const getAccessToken = async (authCode) => {
 //SocialController.jave => /api/member/kakao
 export const getMemberWithAccessToken = async (accessToken) => {
     // Access token을 Authorization 헤더로 보내기
-    const res = await axios.get(`${API_SERVER_HOST}/api/member/kakao`, {
+    const res = await axios.get(`${API_SERVER_HOST}/member/kakao`, {
         headers: {
             Authorization: `Bearer ${accessToken}`  // Bearer 형식으로 헤더에 전달
         }
