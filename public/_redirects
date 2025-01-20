@@ -1,3 +1,2 @@
-/api/* to = "http://192.168.0.29:8010/api/:splat"
-/api/:splat 200
+/api/* http://192.168.0.29:8010/api/:splat 200
 /* /index.html 200
