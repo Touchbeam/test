@@ -3,7 +3,7 @@ import jwtAxios from "../util/jwtUtil";
 //export const API_SERVER_HOST = 'http://localhost:8010'
 import { API_SERVER_HOST } from '../serverEnv'
 
-const prefix = `${API_SERVER_HOST}/api/order/tracking`
+const prefix = `${API_SERVER_HOST}/order/tracking`
 
 // localhost:8010/api/order/tracking/m/7
 export const getTrackingListByMemberId = async( memberId ) => {
