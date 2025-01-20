@@ -32,7 +32,7 @@ const ProductSubdesc = ({productId}) => {
             <p>상세이미지보기</p>
             {product.uploadFileNames.map((ImgFile, i)=>
             <div key={i} className="image-container">
-             <Image src={`${host}/api/product/view/${product.uploadFileNames[i]}` } /> 
+             <Image src={`${host}/api/product/view/${product.uploadFileNames[i]}` } fluid /> 
              </div>
             )}
         </div>
