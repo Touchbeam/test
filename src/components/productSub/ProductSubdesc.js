@@ -1,5 +1,5 @@
 import React ,{useEffect, useState } from 'react'
-import { Image} from 'react-bootstrap';
+import { Container, Image} from 'react-bootstrap';
 import { productGetOne } from '../../api/productsApi';
 // import { API_SERVER_HOST } from '../../api/qnaApi';
 import { API_SERVER_HOST } from '../../serverEnv'
@@ -27,6 +27,7 @@ const ProductSubdesc = ({productId}) => {
 
   return (
     <>
+    <Container>
     <div className='flex-column'>
             <p>상세이미지보기</p>
             {product.uploadFileNames.map((ImgFile, i)=>
@@ -35,6 +36,7 @@ const ProductSubdesc = ({productId}) => {
              </div>
             )}
         </div>
+  </Container>
     </>
   )
 }
