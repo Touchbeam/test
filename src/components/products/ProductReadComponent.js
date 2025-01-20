@@ -340,7 +340,7 @@ const [member, setMember] = useState(() => {
           </DropDownContainer>
 
           <hr/>
-          <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '10px', marginBottom: '20px'}} >
+          <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '10px', marginBottom: '20px', maxHeight:'100px'}} >
                        <Image src='/images/banner1.png' fluid onClick={() => handleToNikeBrand()} style={{ cursor: 'pointer' }}/>
           </div>
 
@@ -353,7 +353,7 @@ const [member, setMember] = useState(() => {
           </RecommendedBox>
   
           <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px'}} >
-                       <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer' }} />
+                       <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer' , maxHeight:'100px'}} />
           </div>
         </Col>
       </Row>
@@ -566,6 +566,8 @@ const RecommendedBox = styled.div`
   width: 100%;
   height: max-content;
   display: grid;
+  max-width: 187px;
+  max-height: 165px;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   img {
