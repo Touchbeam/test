@@ -345,12 +345,12 @@ const [member, setMember] = useState(() => {
           </div>
 
           <Title>Recommended Shoes</Title>
-          <RecommendedBox>
+          <SubImgBox>
             <Image src={`${host}/api/product/view/product_${random.random1}_1.jpg`} onClick={() => navigate(`/products/read/${random.random1}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random2}_1.jpg`} onClick={() => navigate(`/products/read/${random.random2}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random3}_1.jpg`} onClick={() => navigate(`/products/read/${random.random3}`)}  style={{ cursor: 'pointer' }} fluid/>
             <Image src={`${host}/api/product/view/product_${random.random4}_1.jpg`} onClick={() => navigate(`/products/read/${random.random4}`)}  style={{ cursor: 'pointer' }} fluid/>
-          </RecommendedBox>
+          </SubImgBox>
   
           <div  style={{width:'100%', height: '11%', display: 'flex', marginTop: '20px', maxHeight:'100px'}} >
                        <Image src='/images/banner2.png' fluid onClick={() => handleToAdidasBrand()} style={{ cursor: 'pointer'}} />
