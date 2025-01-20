@@ -3,7 +3,7 @@ import jwtAxios from "../util/jwtUtil";
 // import { API_SERVER_HOST } from "./qnaApi";
 import { API_SERVER_HOST } from '../serverEnv'
 
-const host = `${API_SERVER_HOST}/member`
+const host = `${API_SERVER_HOST}/api/member`
 
 /*
 export const loginPost = async (loginParam) => {
