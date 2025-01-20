@@ -42,3 +42,11 @@ const ProductSubdesc = ({productId}) => {
 }
 
 export default ProductSubdesc
+
+
+.image-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
