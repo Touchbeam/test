@@ -1,4 +1,4 @@
 
-/api/* to = "https://5a9d-1-220-61-154.ngrok-free.app/api/:splat"
+/api/* to = "http://192.168.0.29:8010/api/:splat"
 /api/:splat 200
 /* /index.html 200
