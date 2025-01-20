@@ -43,6 +43,4 @@ const ProductSubdesc = ({productId}) => {
 
 export default ProductSubdesc
 
-.image-container {
- 
-}
+
