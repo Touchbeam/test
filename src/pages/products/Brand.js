@@ -175,7 +175,7 @@ const Brand = () => {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <Row>
+    <Row className="justify-content-center">
         {serverData.dtoList.filter(product => product.category != null).map((product,index) => (
           <Col className='ms-2' md={3} key={index} >
             <Card className='mb-5 '>
