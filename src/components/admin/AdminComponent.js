@@ -33,7 +33,7 @@ const [member, setMember] = useState(() => {
                   {/* <Tab eventKey="qna" title="Q&A"><AdminQnAComponent /></Tab> */}
                   <Tab eventKey="review" title="리뷰"><AdminReviewComponent /></Tab>
                   <Tab eventKey="payment" title="결제"><AdminPaymentComponent /></Tab>
-                  <Tab eventKey="delivery" title="배송"></Tab>
+                  <Tab eventKey="delivery" title="배송"><AdminTrackingComponent /></Tab>
                   <Tab eventKey="member" title="회원"><AdminMemberComponent /></Tab>
             </Tabs>
         </Row>
