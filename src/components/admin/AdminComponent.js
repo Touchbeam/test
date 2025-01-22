@@ -29,12 +29,13 @@ const [member, setMember] = useState(() => {
       <Container>
         <Row>
             <Tabs activeKey={key} onSelect={(k) => setKey(k)} id="uncontrolled-tab-example" className="mb-3" >
-                <Tab eventKey="board" title="공지사항/FAQ 관리">{member?.email === adminAccount ? <AdminBoardComponent /> : <></>}</Tab>
-                {/* <Tab eventKey="qna" title="Q&A"><AdminQnAComponent /></Tab> */}
-                <Tab eventKey="review" title="리뷰">{member?.email === adminAccount ? <AdminReviewComponent /> : <></>}</Tab>
-                <Tab eventKey="payment" title="결제">{member?.email === adminAccount ? <AdminPaymentComponent /> : <></>}</Tab>
-                <Tab eventKey="delivery" title="배송">{member?.email === adminAccount ? <AdminTrackingComponent /> : <></>}</Tab>
-                <Tab eventKey="member" title="회원">{member?.email === adminAccount ? <AdminMemberComponent /> : <></>}</Tab>
+                <Tabs activeKey={key} onSelect={(k) => setKey(k)} id="uncontrolled-tab-example" className="mb-3" >
+                  <Tab eventKey="board" title="공지사항/FAQ 관리"><AdminBoardComponent /></Tab>
+                  {/* <Tab eventKey="qna" title="Q&A"><AdminQnAComponent /></Tab> */}
+                  <Tab eventKey="review" title="리뷰"><AdminReviewComponent /></Tab>
+                  <Tab eventKey="payment" title="결제"><AdminPaymentComponent /></Tab>
+                  <Tab eventKey="delivery" title="배송"></Tab>
+                  <Tab eventKey="member" title="회원"><AdminMemberComponent /></Tab>
             </Tabs>
         </Row>
       </Container>
