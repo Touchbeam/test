@@ -10,7 +10,10 @@ import { adminAccount } from "../../adminEnv";
 const AdminComponent = () => {
 
   const [key, setKey] = useState('board')
-  const [member, setMember] = useState(null);
+const [member, setMember] = useState(() => {
+    const storedMember = localStorage.getItem('member');
+    return storedMember ? JSON.parse(storedMember) : null;
+  });
 
   useEffect(() => {
       const storedMember = localStorage.getItem("member");
