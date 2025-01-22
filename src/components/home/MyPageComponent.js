@@ -94,7 +94,7 @@ const MyPageComponent = () => {
         justifyContent: 'center', 
       }}
     >
-      {member.name} 님의 리뷰
+      {member.nickname} 님의 리뷰
     </Nav.Link>
   </Nav.Item>
   <Nav.Item style={{  height: '100%',
@@ -114,7 +114,7 @@ const MyPageComponent = () => {
         justifyContent: 'center', 
       }}
     >
-      {member.name} 님의 QNA
+      {member.nickname} 님의 QNA
     </Nav.Link>
   </Nav.Item>
  
