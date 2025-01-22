@@ -4,6 +4,7 @@ import {  Outlet, useNavigate } from 'react-router-dom';
 import { Search, Incognito } from 'react-bootstrap-icons'; // 돋보기 아이콘 추가
 import  useCustomLogin from '../hooks/useCustomLogin'
 import { getOneMember } from '../api/memberApi';
+import { adminAccount } from '../adminEnv'
 import styled from 'styled-components';
 
 const AppLayout = () => {
