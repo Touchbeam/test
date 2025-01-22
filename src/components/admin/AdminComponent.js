@@ -29,7 +29,6 @@ const [member, setMember] = useState(() => {
       <Container>
         <Row>
             <Tabs activeKey={key} onSelect={(k) => setKey(k)} id="uncontrolled-tab-example" className="mb-3" >
-                <Tabs activeKey={key} onSelect={(k) => setKey(k)} id="uncontrolled-tab-example" className="mb-3" >
                   <Tab eventKey="board" title="공지사항/FAQ 관리"><AdminBoardComponent /></Tab>
                   {/* <Tab eventKey="qna" title="Q&A"><AdminQnAComponent /></Tab> */}
                   <Tab eventKey="review" title="리뷰"><AdminReviewComponent /></Tab>
