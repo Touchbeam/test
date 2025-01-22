@@ -96,7 +96,7 @@ const BoardReadComponent = ({ board_id }) => {
           </Table>
           <div className='mt-3 text-end'>
             <Button variant='primary'  className='me-3' onClick={() => moveToList(board.category)}>목록보기</Button>
-            {member.email === "hexa@code.com" ? 
+            {member.email === "admin@hexa.com" ? 
               <Button variant='outline-danger' className='me-2' onClick={() => moveToUpdate(board_id)}>수정</Button> : <></>
             }
           </div>
