@@ -18,6 +18,7 @@ const AdminComponent = () => {
         const parsedMember = JSON.parse(storedMember);
         setMember(parsedMember);
       }
+    console.log("멤버?",member);
     }, [])
 
   return (
