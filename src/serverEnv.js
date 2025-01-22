@@ -3,7 +3,7 @@
     testhost : "http://192.168.0.2:8010"
 */
 
-export const API_SERVER_HOST = process.env.REACT_APP_API_SERVER_HOST || "https://wants-limits-backup-advanced.trycloudflare.com"; 
+export const API_SERVER_HOST = process.env.REACT_APP_API_SERVER_HOST || "https://sen-restore-scotia-there.trycloudflare.com"; 
 
 export const REDIRECT_HOST = process.env.REACT_APP_REDIRECT_HOST || "https://fastidious-toffee-be993e.netlify.app";
 
